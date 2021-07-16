@@ -13,7 +13,7 @@ function Navbar() {
             { !isLoggedIn &&
             <ul>
                 <li><Link to="/">Home</Link></li>
-                <li><Link to="/Login">Login</Link></li>
+                <li className='login'><Link to="/Login">Login</Link></li>
             </ul>
             }
             { isLoggedIn &&
@@ -22,7 +22,7 @@ function Navbar() {
                 <li><Link to="/products">Products</Link></li>
                 <li><Link to="/whoweare">Who we Are</Link></li>
                 <li><Link to="/contacts">Contacts</Link></li>
-                <li><Link to="/Login">Logout</Link></li>
+                <li className='login'><Link to="/Login">Logout</Link></li>
             </ul>
             }
       </div>
